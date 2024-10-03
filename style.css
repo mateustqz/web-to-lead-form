@@ -16,27 +16,27 @@ h1 {
     text-align: center;
     color: #333;
     font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 30px;  /* Espaçamento extra acima do título */
+    margin-bottom: 10px;
+    margin-top: 15px;  /* Espaçamento extra acima do título */
 }
 
 /* Container central para o formulário */
 form {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     width: 100%;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 10px;
 }
 
 /* Layout em duas colunas para telas grandes */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Espaçamento entre colunas */
+    gap: 10px; /* Espaçamento entre colunas */
 }
 
 /* Estilo para os rótulos */
@@ -55,7 +55,7 @@ input[type="tel"],
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
@@ -116,18 +116,18 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="tel"] {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Estilo responsivo para telas menores (smartphones) */
 @media (max-width: 768px) {
     .form-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 10px;
     }
 
     form {
-        padding: 15px;  /* Reduz o padding em telas menores */
+        padding: 10px;  /* Reduz o padding em telas menores */
         margin: 0 auto; /* Margem para centralizar o formulário */
         width: 92%; /* Ajusta a largura para 70% em dispositivos móveis */
     }
@@ -145,7 +145,7 @@ input[type="tel"] {
     input[type="date"],
     input[type="tel"] {
         width: 85%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding: 12px;
         font-size: 16px;
     }
@@ -154,9 +154,9 @@ input[type="tel"] {
 /* Centralizar o formulário para dispositivos maiores */
 @media (min-width: 769px) {
     form {
-        margin: 20px auto; /* Centraliza o formulário */
-        padding: 30px;  /* Aumenta o padding em telas maiores */
-        width: 100%; /* Mantém 100% de largura para desktops */
+        margin: 10px auto; /* Centraliza o formulário */
+        padding: 10px;  /* Aumenta o padding em telas maiores */
+        width: 900%; /* Mantém 100% de largura para desktops */
     }
 }
 
@@ -165,7 +165,7 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="tel"] {
-    margin-bottom: 20px; /* Espaçamento maior entre os campos */
+    margin-bottom: 10px; /* Espaçamento maior entre os campos */
 }
 
 /* Ajuste para o campo de data */
