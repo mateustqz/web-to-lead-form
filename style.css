@@ -17,7 +17,7 @@ h1 {
     color: #333;
     font-size: 24px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 30px;  
 }
 
 /* Container central para o formulário */
@@ -115,7 +115,7 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
     .form-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 20px;
     }
 
     form {
@@ -133,6 +133,8 @@ input[type="submit"]:hover {
     input[type="tel"] {
         width: 100%;
         margin-bottom: 20px;
+        padding: 12px;
+        font-size: 16px;
     }
 }
 
