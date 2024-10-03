@@ -94,6 +94,7 @@ function beforeSubmit() {
 } */
 
 // Função para capturar o parâmetro da URL
+// Função para capturar o parâmetro da URL
 function getParameterByName(name) {
     const url = window.location.href; // Pega a URL completa da página atual
     const namePattern = name.replace(/[\[\]]/g, '\\$&'); // Trata o nome do parâmetro para garantir que caracteres especiais sejam escapados corretamente
@@ -104,8 +105,15 @@ function getParameterByName(name) {
     return decodeURIComponent(results[2].replace(/\+/g, ' ')); // Decodifica o valor do parâmetro (caso tenha caracteres especiais ou espaços) e o retorna
 }
 
+// Preencher o campo lead_source com o valor capturado da URL
+document.addEventListener("DOMContentLoaded", function() {
+    const leadSourceValue = getParameterByName('LeadSource'); // Captura o valor do parâmetro 'leadsource' na URL
+    if (leadSourceValue) {
+        document.getElementById('LeadSource').value = leadSourceValue; // Preenche o campo oculto ou visível com o valor capturado
+    }
+});
 // Evento de entrada de dados no campo CEP para buscar o endereço automaticamente
-document.getElementById('postal_code').addEventListener('input', function() {
+document.getElementById('PostalCode').addEventListener('input', function() {
     const cep = this.value;  // Captura o valor digitado no campo de CEP
     buscarCEP(cep);  // Chama a função para buscar o endereço
 });
@@ -122,6 +130,6 @@ document.getElementById('leadForm').addEventListener('submit', function (e) {
 
     //beforeSubmit();
 });
-
+/* 
 // Definir o valor do campo oculto com o parâmetro da URL "lead_source"
-document.getElementById('lead_source').value = getParameterByName('lead_source');
+document.getElementById('LeadSource').value = getParameterByName('LeadSource'); */
