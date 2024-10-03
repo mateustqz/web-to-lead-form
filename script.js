@@ -109,12 +109,13 @@ function getParameterByName(name) {
 document.addEventListener("DOMContentLoaded", function() {
     const leadSourceValue = getParameterByName('LeadSource'); // Captura o valor do parâmetro 'leadsource' na URL
     if (leadSourceValue) {
-        document.getElementById('LeadSource').value = leadSourceValue; // Preenche o campo oculto ou visível com o valor capturado
+        document.getElementById('lead_source').value = leadSourceValue; // Preenche o campo oculto ou visível com o valor capturado
     }
 });
 // Evento de entrada de dados no campo CEP para buscar o endereço automaticamente
-document.getElementById('PostalCode').addEventListener('input', function() {
-    const cep = this.value;  // Captura o valor digitado no campo de CEP
+document.getElementById('zip').addEventListener('input', function() {
+    const cep = this.value.replace(/\D/g, '');  // Remove caracteres não numéricos do campo CEP
+    this.value = cep;  // Atualiza o campo CEP com o valor limpo
     buscarCEP(cep);  // Chama a função para buscar o endereço
 });
 
