@@ -1,0 +1,79 @@
+
+/* Definindo estilos globais para a página de agradecimento */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Estilo para o container da mensagem */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Estilo para o título da mensagem de agradecimento */
+h1 {
+    color: #007bff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a mensagem de agradecimento */
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Estilo para o botão de ação */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo responsivo para telas menores (mobile) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    p {
+        font-size: 16px; /* Ajusta o tamanho da mensagem */
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%; /* Botão ocupa a largura total no mobile */
+        font-size: 18px;
+    }
+}

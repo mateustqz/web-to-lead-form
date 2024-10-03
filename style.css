@@ -1,3 +1,4 @@
+
 /* Definindo estilos globais para a página */
 body {
     font-family: 'Arial', sans-serif;
@@ -122,4 +123,51 @@ input[type="tel"] {
     .form-grid {
         grid-template-columns: 1fr;
     }
+
+    form {
+        padding: 15px;  /* Reduz o padding em telas menores */
+        margin: 0 10px; /* Margem para não encostar nas extremidades da tela */
+    }
+
+    h1 {
+        font-size: 22px;  /* Ajusta o tamanho do título para telas menores */
+    }
+
+    input[type="submit"] {
+        width: 100%;  /* Botão de envio ocupa a largura total no mobile */
+    }
+
+    input,
+    select {
+        width: 100%;  /* Campos ocupam toda a largura */
+        box-sizing: border-box;  /* Inclui o padding e borda na largura */
+    }
+
+    input[type="date"] {
+        width: 100%;  /* Campo de data ocupa toda a largura em dispositivos móveis */
+        box-sizing: border-box;
+    }
+}
+
+/* Centralizar o formulário para dispositivos maiores */
+@media (min-width: 769px) {
+    form {
+        margin: 20px auto; /* Centraliza o formulário */
+        padding: 30px;  /* Aumenta o padding em telas maiores */
+    }
+}
+
+/* Espaçamento adicional para os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+    margin-bottom: 20px; /* Espaçamento maior entre os campos */
+}
+
+/* Ajuste para o campo de data */
+input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura */
 }
