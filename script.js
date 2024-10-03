@@ -107,7 +107,7 @@ function getParameterByName(name) {
 
 // Preencher o campo lead_source com o valor capturado da URL
 document.addEventListener("DOMContentLoaded", function() {
-    const leadSourceValue = getParameterByName('LeadSource'); // Captura o valor do parâmetro 'leadsource' na URL
+    const leadSourceValue = getParameterByName('lead_source'); // Captura o valor do parâmetro 'leadsource' na URL
     if (leadSourceValue) {
         document.getElementById('lead_source').value = leadSourceValue; // Preenche o campo oculto ou visível com o valor capturado
     }
