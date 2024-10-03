@@ -1,0 +1,125 @@
+/* Definindo estilos globais para a página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Ajustando o espaçamento para o título */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 30px;  /* Espaçamento extra acima do título */
+}
+
+/* Container central para o formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Layout em duas colunas para telas grandes */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Estilo para os rótulos */
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo ao focar em um campo de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para os asteriscos vermelhos de campos obrigatórios */
+.asterisk-required {
+    color: red;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Tooltip (descrição) quando passa o mouse sobre o asterisco */
+.asterisk-required:hover::after {
+    content: 'Campo obrigatório';
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+/* Espaçamento para melhorar a legibilidade */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+    margin-bottom: 20px;
+}
+
+/* Estilo responsivo para telas menores (smartphones) */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
