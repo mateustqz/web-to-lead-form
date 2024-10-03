@@ -129,7 +129,7 @@ input[type="tel"] {
     form {
         padding: 15px;  /* Reduz o padding em telas menores */
         margin: 0 auto; /* Margem para centralizar o formulário */
-        width: 70%; /* Ajusta a largura para 70% em dispositivos móveis */
+        width: 92%; /* Ajusta a largura para 70% em dispositivos móveis */
     }
 
     h1 {
@@ -137,14 +137,14 @@ input[type="tel"] {
     }
 
     input[type="submit"] {
-        width: 70%;  /* Botão de envio ocupa a largura total no mobile */
+        width: 85%;  /* Botão de envio ocupa a largura total no mobile */
     }
 
     input[type="text"],
     input[type="email"],
     input[type="date"],
     input[type="tel"] {
-        width: 70%;
+        width: 85%;
         margin-bottom: 20px;
         padding: 12px;
         font-size: 16px;
@@ -156,7 +156,7 @@ input[type="tel"] {
     form {
         margin: 20px auto; /* Centraliza o formulário */
         padding: 30px;  /* Aumenta o padding em telas maiores */
-        width: 70%; /* Mantém 100% de largura para desktops */
+        width: 100%; /* Mantém 100% de largura para desktops */
     }
 }
 
